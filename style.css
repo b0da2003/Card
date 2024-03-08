@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(47, 88%, 63%);
+}
+main {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 385px;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 8px 8px 0px black;
+  border: 1px solid black;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top img {
+  border-radius: 0.8rem;
+  width: 350px;
+}
+.mid {
+  padding: 1rem 0;
+  margin-left: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+h5 {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.3rem;
+  padding: 0.6rem 0.9rem;
+  width: fit-content;
+  margin: 0.5rem 0 1rem 0;
+  font-weight: 800;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.mid span {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+h2 {
+  padding: 1rem 0 0.8rem 0;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+p {
+  font-size: 1rem;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5rem;
+}
+.last {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.3rem;
+}
+.last img {
+  width: 35px;
+}
+.last span {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 350px;
+    padding: 1rem;
+  }
+  .top img {
+    width: 315px;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  .mid span {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90dvw;
+    padding-top: 1.3rem;
+  }
+  .top img {
+    width: 96%;
+  }
+  .last {
+    margin-bottom:0.6rem ;
+  }
+}
+ 
